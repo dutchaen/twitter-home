@@ -1,0 +1,203 @@
+html {
+    background-color: black;
+    
+}
+
+* {
+    font-weight: 500;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+}
+
+a, p {
+    color: white;
+}
+
+.twitter-view-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.twitter-views {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.twitter-control-view {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 0px 20px;
+}
+
+.twitter-control-view-button {
+    padding: 2px 25px;
+    margin-top: 3px;
+    background-color: black;
+    color: white;
+    font-weight: 300;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: none;
+    border-radius: 40px;
+}
+
+.twitter-control-view-button:hover {
+    cursor: pointer;
+    background-color: rgba(6, 84, 143, 0.129);
+}
+
+.twitter-control-view-button svg {
+    width: 30px;
+    height: 30px;
+    margin-top: 5px;
+}
+
+.twitter-control-view-button p {
+    margin-left: 7px;
+}
+
+.twitter-control-view-button path {
+    fill: white;
+}
+
+.twitter-control-view img {
+    width: 50px;
+}
+
+.twitter-control-view img:hover {
+    cursor: pointer;
+}
+
+.twitter-event-post-view {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px lightgray;
+}
+
+.twitter-event-post-item {
+    border: 1px lightgray;
+}
+
+.twitter-for-you-following-row {
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+}
+
+.twitter-for-you-following-row button {
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+.twitter-what-is-happening-row {
+    display: flex;
+    flex-direction: row;
+    padding: 1%;
+}
+
+.twitter-what-is-happening-img {
+    padding-right: 5%;
+}
+
+.twitter-what-is-happening-img img {
+    height: 50px;
+    width: 50px;
+    border-radius: 100px;
+}
+
+.twitter-what-is-happening-textarea {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2.5%;
+}
+
+.twitter-global-button {
+    background-color: rgb(29, 155, 240);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    margin-top: 10px;
+}
+
+.twitter-global-button:hover {
+    cursor: pointer;
+    background-color: rgba(6, 84, 143, 0.129);
+}
+
+.twitter-what-is-happening-textarea textarea {
+    background-color: black;
+    color: white;
+    border: none;
+    resize: none;
+    outline: none;
+    font-weight: 200;
+
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+.twitter-what-is-happening-row hr {
+    border: 0.5px solid rgba(169, 169, 169, 0.39);
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.twitter-what-is-happening-toolbox {
+    display: flex;
+    align-items: center;
+}
+
+.twitter-what-is-happening-toolbox svg {
+    height: 25px;
+    width: 25px;
+    color: rgb(29, 155, 240);
+    padding: 8px;
+}
+
+.twitter-what-is-happening-toolbox path {
+    fill:  rgb(29, 155, 240);
+}
+
+.twitter-what-is-happening-toolbox svg:hover {
+    background-color: rgba(6, 84, 143, 0.129);
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+
+.twitter-what-is-happening-toolbox button {
+    background-color: rgb(29, 155, 240);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+}
+
+.twitter-what-is-happening-text-progress-circle {
+    height: 25px;
+    width: 25px;
+    border: 4px solid rgb(29, 155, 240);
+    display: flex;
+    border-radius: 100px;
+    font-size: 0.5rem;
+}
+
+.twitter-what-is-happening-toolbox button:hover {
+    cursor: pointer;
+    background-color: rgba(6, 84, 143, 0.129);
+}
+
+.twitter-what-is-happening-toolbox button:disabled {
+    cursor: default;
+    background-color: rgba(6, 84, 143, 0.429);
+}
