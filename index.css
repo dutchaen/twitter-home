@@ -4,6 +4,7 @@ html {
 }
 
 * {
+    font-size: 17px;
     font-weight: 500;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
@@ -34,7 +35,7 @@ a, p {
 }
 
 .twitter-control-view-button {
-    padding: 2px 25px;
+    padding: 2px 65px 2px 10px;
     margin-top: 3px;
     background-color: black;
     color: white;
@@ -77,16 +78,16 @@ a, p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px lightgray;
 }
 
 .twitter-event-post-item {
-    border: 1px lightgray;
+    border: 1px solid lightgray;
 }
 
 .twitter-for-you-following-row {
     display: flex;
     flex-direction: row;
+    margin-top: 28px;
     /* align-items: center; */
 }
 
@@ -99,7 +100,9 @@ a, p {
 .twitter-what-is-happening-row {
     display: flex;
     flex-direction: row;
-    padding: 1%;
+    padding: 10px;
+    max-width: 600px;
+    /* border: 0.1px solid lightgray; */
 }
 
 .twitter-what-is-happening-img {
@@ -138,7 +141,8 @@ a, p {
     border: none;
     resize: none;
     outline: none;
-    font-weight: 200;
+    font-weight: 350;
+    font-size: 17px;
 
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
@@ -174,6 +178,10 @@ a, p {
     cursor: pointer;
 }
 
+.twitter-what-is-happening-toolbox hr {
+    width: 10px;
+    border: none;
+}
 
 .twitter-what-is-happening-toolbox button {
     background-color: rgb(29, 155, 240);
@@ -190,6 +198,7 @@ a, p {
     display: flex;
     border-radius: 100px;
     font-size: 0.5rem;
+    margin: 5px 14px;
 }
 
 .twitter-what-is-happening-toolbox button:hover {
@@ -200,4 +209,109 @@ a, p {
 .twitter-what-is-happening-toolbox button:disabled {
     cursor: default;
     background-color: rgba(6, 84, 143, 0.429);
+}
+
+.twitter-tweets-view {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    max-width: 600px;
+    max-height: 500px;
+}
+
+.twitter-tweet {
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+    width: 600px;
+}
+
+.twitter-tweet:hover {
+    /* background-color: rgba(6, 84, 143, 0.129); */
+    background-color: rgba(32, 32, 32, 0.182);;
+    cursor: pointer;
+}
+
+.twitter-tweeter-img {
+    padding-right: 3%;
+}
+
+.twitter-tweet img {
+    height: 50px;
+    width: 50px;
+    border-radius: 100px;
+}
+
+
+.twitter-tweet-author-row {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.twitter-tweet-author-name {
+    font-weight: 600;
+    color: white;
+    padding: 0px 4px 0px 0px;
+}
+
+.twitter-tweet-author-handle {
+    font-weight: 400;
+    color: darkgray;
+    padding: 0px 4px 0px 0px;
+}
+
+.twitter-tweet-content-text {
+    align-items: right;
+    font-weight: 350;
+    font-size: 17px;
+    margin: 5px 10px 30px 0px;
+}
+
+.twitter-tweet-toolbox {
+    display: flex;
+    align-content: space-evenly;
+    max-width: max-content;
+}
+
+
+.twitter-tweet-toolbox svg {
+    height: 25px;
+    width: 25px;
+    padding: 8px;
+    margin: 0px 120px 0px 0px;
+}
+
+/* .twitter-tweet-toolbox svg:hover {
+    background-color: rgba(6, 84, 143, 0.129);
+    border-radius: 100px;
+    cursor: pointer;
+} */
+
+.twitter-tweet-toolbox path {
+    fill: rgb(68, 68, 68);
+}
+
+.twitter-tweet-toolbox-comment-icon:hover {
+    background-color: rgba(61, 61, 68, 0.144);
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.twitter-tweet-toolbox-retweet-icon:hover {
+    background-color: rgba(83, 114, 95, 0.144);
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.twitter-tweet-toolbox-like-icon:hover {
+    background-color: rgba(231, 62, 155, 0.13);
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.twitter-tweet-toolbox-share-icon:hover {
+    background-color: rgba(6, 84, 143, 0.129);
+    border-radius: 100px;
+    cursor: pointer;
 }
